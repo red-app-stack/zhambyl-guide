@@ -28,6 +28,7 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  flutter_carousel_widget: ^3.1.0
   panorama_viewer: any
   # bcrypt: ^1.1.3
   # crypto: ^3.0.6
@@ -113,7 +114,7 @@ flutter:
     - assets/locations/The-Republic-of-Kazakhstan/Zhambyl/Aisha-Bibi-Mausoleum/
     - assets/locations/The-Republic-of-Kazakhstan/Zhambyl/Babaji-Khatun-Mausoleum/
     - assets/locations/The-Republic-of-Kazakhstan/Zhambyl/Karahan-Mausoleum/
-    - assets/locations/The-Republic-of-Kazakhstan/Zhambyl/Tekturmas/
+    - assets/locations/The-Republic-of-Kazakhstan/Zhambyl/Tekturmas-Mausoleum/
 
   fonts:
     - family: OpenSans

@@ -5,34 +5,18 @@ class FeedbackScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Отзывы"),
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-      ),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          children: [
-            Text("Оставьте ваш отзыв", style: Theme.of(context).textTheme.titleLarge),
-            SizedBox(height: 16),
-            TextField(
-              decoration: InputDecoration(
-                border: OutlineInputBorder(),
-                hintText: "Напишите ваш отзыв...",
+        body: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16.0),
+            child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+              Text(
+                "Оставьте отзыв",
+                style: theme.textTheme.titleLarge?.copyWith(fontWeight: FontWeight.bold),
               ),
-              maxLines: 5,
-            ),
-            SizedBox(height: 16),
-            ElevatedButton(
-              onPressed: () {},
-              child: Text("Отправить"),
-            )
-          ],
-        ),
-      ),
-    );
+              const SizedBox(height: 8),
+            ])));
   }
 }
 

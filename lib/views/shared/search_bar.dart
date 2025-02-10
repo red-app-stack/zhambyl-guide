@@ -23,21 +23,35 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text("Привет, путешественник", style: Theme.of(context).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.bold)),
-                  Text("Куда отправимся сегодня?", style: Theme.of(context).textTheme.titleMedium?.copyWith(color: theme.colorScheme.secondary)),
+                  Text(
+                    "Привет, путешественник",
+                    style: theme.textTheme.titleLarge?.copyWith(fontWeight: FontWeight.bold),
+                  ),
+                  Text(
+                    "Куда отправимся сегодня?",
+                    style: theme.textTheme.titleMedium?.copyWith(color: theme.colorScheme.secondary),
+                  ),
                 ],
               ),
-              Spacer(),
-              GestureDetector(
-                onTap: onProfileTap,
-                child: SizedBox(
-                  width: 32,
-                  height: 32,
-                  child: SvgPicture.asset(
-                    'assets/icons/ic_profile.svg',
-                    colorFilter: ColorFilter.mode(
-                      theme.colorScheme.primary,
-                      BlendMode.srcIn,
+              const Spacer(),
+              // Profile Button with Splash Effect
+              Material(
+                color: Colors.transparent,
+                child: InkWell(
+                  borderRadius: BorderRadius.circular(30),
+                  splashColor: theme.colorScheme.primary.withOpacity(0.08),
+                  highlightColor: theme.colorScheme.primary.withOpacity(0.04),
+                  onTap: onProfileTap,
+                  child: Padding(
+                    padding: const EdgeInsets.all(6.0),
+                    child: SvgPicture.asset(
+                      'assets/icons/ic_profile.svg',
+                      width: 32,
+                      height: 32,
+                      colorFilter: ColorFilter.mode(
+                        theme.colorScheme.primary,
+                        BlendMode.srcIn,
+                      ),
                     ),
                   ),
                 ),
@@ -65,15 +79,20 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
                   ),
                 ),
               ),
-              suffixIcon: GestureDetector(
-                onTap: onSearchTap,
-                child: Padding(
-                  padding: const EdgeInsets.all(12.0),
-                  child: SizedBox(
-                    width: 24,
-                    height: 24,
+              // Search Filter Button with Splash Effect
+              suffixIcon: Material(
+                color: Colors.transparent,
+                child: InkWell(
+                  borderRadius: BorderRadius.circular(30),
+                  splashColor: theme.colorScheme.primary.withOpacity(0.08),
+                  highlightColor: theme.colorScheme.primary.withOpacity(0.04),
+                  onTap: onSearchTap,
+                  child: Padding(
+                    padding: const EdgeInsets.all(12.0),
                     child: SvgPicture.asset(
                       'assets/icons/ic_tune.svg',
+                      width: 24,
+                      height: 24,
                       colorFilter: ColorFilter.mode(
                         theme.colorScheme.secondary,
                         BlendMode.srcIn,

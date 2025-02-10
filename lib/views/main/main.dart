@@ -27,14 +27,14 @@ class MainScreenState extends State<MainScreen> {
     MenuScreen(),
   ];
 
-  final List<String> _selectedIconPaths = [
+  final List<String> _iconPaths = [
     'assets/icons/nav_home.svg',
     'assets/icons/nav_favourite.svg',
     'assets/icons/nav_feedback.svg',
     'assets/icons/nav_menu.svg',
   ];
 
-  final List<String> _iconPaths = [
+  final List<String> _selectedIconPaths = [
     'assets/icons/nav_home_on.svg',
     'assets/icons/nav_favourite_on.svg',
     'assets/icons/nav_feedback_on.svg',

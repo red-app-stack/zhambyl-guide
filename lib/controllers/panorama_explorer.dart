@@ -41,7 +41,7 @@ class PanoramaExplorerState extends State<PanoramaExplorer> {
     });
   }
 
-  List<Hotspot> _buildHotspots() {
+  List<Hotspot> _buildHotspots(ThemeData theme) {
     if (_currentPanoIndex == 0) {
       return [
         Hotspot(
@@ -49,7 +49,7 @@ class PanoramaExplorerState extends State<PanoramaExplorer> {
           longitude: 50.0,
           width: 90,
           height: 110,
-          widget: _hotspotButton("Вперед", Icons.arrow_forward, () => _navigateTo(1)),
+          widget: _hotspotButton(theme, "Вперед", Icons.arrow_forward, () => _navigateTo(1)),
         ),
       ];
     } else if (_currentPanoIndex == 1) {
@@ -59,14 +59,14 @@ class PanoramaExplorerState extends State<PanoramaExplorer> {
           longitude: 155.0,
           width: 90,
           height: 80,
-          widget: _hotspotButton("Назад", Icons.arrow_back, () => _navigateTo(0)),
+          widget: _hotspotButton(theme, "Назад", Icons.arrow_back, () => _navigateTo(0)),
         ),
         Hotspot(
           latitude: -10.0,
           longitude: 60.0,
           width: 90,
           height: 80,
-          widget: _hotspotButton("Вперед", Icons.arrow_forward, () => _navigateTo(2)),
+          widget: _hotspotButton(theme, "Вперед", Icons.arrow_forward, () => _navigateTo(2)),
         ),
       ];
     } else if (_currentPanoIndex == 2) {
@@ -76,7 +76,7 @@ class PanoramaExplorerState extends State<PanoramaExplorer> {
           longitude: 80.0,
           width: 90,
           height: 80,
-          widget: _hotspotButton("Назад", Icons.arrow_back, () => _navigateTo(1)),
+          widget: _hotspotButton(theme, "Назад", Icons.arrow_back, () => _navigateTo(1)),
         ),
       ];
     }
@@ -85,6 +85,7 @@ class PanoramaExplorerState extends State<PanoramaExplorer> {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return Scaffold(
       body: Stack(
         children: [
@@ -98,7 +99,7 @@ class PanoramaExplorerState extends State<PanoramaExplorer> {
                 _latitude = lat;
               });
             },
-            hotspots: _buildHotspots(),
+            hotspots: _buildHotspots(theme),
             child: Image.asset(panoImages[_currentPanoIndex]),
           ),
           Positioned(
@@ -127,7 +128,7 @@ class PanoramaExplorerState extends State<PanoramaExplorer> {
     );
   }
 
-  Widget _hotspotButton(String text, IconData icon, VoidCallback onPressed) {
+  Widget _hotspotButton(ThemeData theme, String text, IconData icon, VoidCallback onPressed) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
@@ -138,7 +139,7 @@ class PanoramaExplorerState extends State<PanoramaExplorer> {
             foregroundColor: WidgetStateProperty.all(Colors.white),
           ),
           onPressed: onPressed,
-          child: Icon(icon),
+          child: Icon(icon, color: theme.colorScheme.onSurface),
         ),
         Container(
           padding: const EdgeInsets.all(4.0),
