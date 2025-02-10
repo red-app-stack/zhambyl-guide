@@ -1,69 +1,70 @@
 import 'package:flutter/material.dart';
 
 class AppColorsDark {
-  static const Color primary = Color(0xFFaac7ff);
-  static const Color onPrimary = Color(0xFF002f65);
-  static const Color primaryContainer = Color(0xFF005dba);
+  static const Color primary = Color(0xFFADB5BD);
+  static const Color onPrimary = Color(0xFF212529);
+  static const Color primaryContainer = Color(0xFF6C757D);
   static const Color onPrimaryContainer = Color(0xFFFFFFFF);
-  static const Color notifications = Color(0xFFFFE066);
+  static const Color notifications = Color(0xFFFFC107);
 
-  static const Color primaryVariant = Color(0xFF00438a);
-  static const Color primaryVariantHigh = Color(0xFF6b90d6);
+  static const Color primaryVariant = Color(0xFF54595F);
+  static const Color primaryVariantHigh = Color(0xFF6C757D);
 
-  static const Color secondary = Color(0xFFb0c7f5);
-  static const Color onSecondary = Color(0xFF183055);
-  static const Color secondaryContainer = Color(0xFF283f65);
-  static const Color onSecondaryContainer = Color(0xFFc0d4ff);
+  static const Color secondary = Color(0xFF6C757D);
+  static const Color onSecondary = Color(0xFFF8F9FA);
+  static const Color secondaryContainer = Color(0xFF343A40);
+  static const Color onSecondaryContainer = Color(0xFFC0C7D1);
 
-  static const Color tertiary = Color(0xFF49f085);
-  static const Color onTertiary = Color(0xFF003918);
-  static const Color tertiaryContainer = Color(0xFF00c462);
-  static const Color onTertiaryContainer = Color(0xFF00260d);
+  static const Color tertiary = Color(0xFF198754);
+  static const Color onTertiary = Color(0xFFFFFFFF);
+  static const Color tertiaryContainer = Color(0xFF146C43);
+  static const Color onTertiaryContainer = Color(0xFFC3E6CB);
 
-  static const Color error = Color(0xFFffb3ad);
-  static const Color onError = Color(0xFF680009);
-  static const Color errorContainer = Color(0xFFc02a2c);
-  static const Color onErrorContainer = Color(0xFFFFFFFF);
+  static const Color error = Color(0xFFDC3545);
+  static const Color onError = Color(0xFFFFFFFF);
+  static const Color errorContainer = Color(0xFFC82333);
+  static const Color onErrorContainer = Color(0xFFFFC1C1);
 
-  static const Color surface = Color(0xFF10131a);
-  static const Color surfaceDim = Color(0xFF10131a);
-  static const Color surfaceBright = Color(0xFF363940);
+  static const Color surface = Color(0xFF212529);
+  static const Color surfaceDim = Color(0xFF343A40);
+  static const Color surfaceBright = Color(0xFF495057);
 
-  static const Color onSurface = Color(0xFFe1e2eb);
-  static const Color onSurfaceVariant = Color(0xFFc1c6d5);
+  static const Color onSurface = Color(0xFFF8F9FA);
+  static const Color onSurfaceVariant = Color(0xFFADB5BD);
 
-  static const Color outline = Color(0xFF8b919e);
-  static const Color outlineVariant = Color(0xFF414753);
+  static const Color outline = Color(0xFF6C757D);
+  static const Color outlineVariant = Color(0xFF495057);
 
-  static const Color surfaceContainerLowest = Color(0xFF0b0e14);
-  static const Color surfaceContainerLow = Color(0xFF191c22);
-  static const Color surfaceContainer = Color(0xFF1d2026);
-  static const Color surfaceContainerHigh = Color(0xFF272a31);
-  static const Color surfaceContainerHighest = Color(0xFF32353c);
+  static const Color surfaceContainerLowest = Color(0xFF1B1F23);
+  static const Color surfaceContainerLow = Color(0xFF23272B);
+  static const Color surfaceContainer = Color(0xFF2C3035);
+  static const Color surfaceContainerHigh = Color(0xFF343A40);
+  static const Color surfaceContainerHighest = Color(0xFF3D4248);
 
-  static const Color inversePrimary = Color(0xFF005cba);
-  static const Color inverseSurface = Color(0xFFe1e2eb);
-  static const Color onInverseSurface = Color(0xFF2e3037);
+  static const Color inversePrimary = Color(0xFF6C757D);
+  static const Color inverseSurface = Color(0xFFFFFFFF);
+  static const Color onInverseSurface = Color(0xFF212529);
 
-  static var primaryCardBg = Color(0xFF1573FF);
-  static var primaryCardFg = Color(0xFF00438a);
-  static var secondaryCardBg = Color(0xFF6D88C1);
-  static var secondaryCardFg = Color(0xFF495f87);
-  static var tertiaryCardBg = Color(0xFF58A76D);
-  static var tertiaryCardFg = Color(0xFF006d34);
-  static var grayCardBg = Color(0xFF32353c);
-  static var grayCardFg = Color(0xFF727784);
-  static var background = Color(0xFF0066cc);
+  static var primaryCardBg = Color(0xFF343A40);
+  static var primaryCardFg = Color(0xFF212529);
+  static var secondaryCardBg = Color(0xFF6C757D);
+  static var secondaryCardFg = Color(0xFF54595F);
+  static var tertiaryCardBg = Color(0xFF198754);
+  static var tertiaryCardFg = Color(0xFF146C43);
+  static var grayCardBg = Color(0xFF495057);
+  static var grayCardFg = Color(0xFF6C757D);
 
-  static var yellowCardBg = Color(0xFFF9C74F);
-  static var yellowCardFg = Color(0xFF7D5A1A);
+  static var background = Color(0xFF212529);
 
-  static var purpleCardBg = Color(0xFF9B5DE5);
-  static var purpleCardFg = Color(0xFF5D3A9B);
+  static var yellowCardBg = Color(0xFFFFC107);
+  static var yellowCardFg = Color(0xFFB39B47);
 
-  static var goldCardBg = Color(0xFFFFC700);
-  static var goldCardFg = Color(0xFF8A6500);
+  static var purpleCardBg = Color(0xFF6F42C1);
+  static var purpleCardFg = Color(0xFF5A32A3);
 
-  static var redCardBg = Color(0xFFEF476F);
-  static var redCardFg = Color(0xFF8A2B42);
+  static var goldCardBg = Color(0xFFFFD700);
+  static var goldCardFg = Color(0xFFB39B00);
+
+  static var redCardBg = Color(0xFFDC3545);
+  static var redCardFg = Color(0xFFC82333);
 }

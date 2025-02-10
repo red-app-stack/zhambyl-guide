@@ -1,13 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../services/secure_store.dart';
-import '../views/shared/user_settings.dart';
-
 
 class ThemeController extends GetxController {
-  final secureStore = Get.find<SecureStore>();
   var themeMode = ThemeMode.system.obs;
-  
+
   @override
   void onInit() {
     super.onInit();
@@ -15,12 +11,7 @@ class ThemeController extends GetxController {
   }
 
   Future<void> loadSavedSettings() async {
-    final settings = await secureStore.loadSettings();
-    if (settings != null) {
-      themeMode.value = settings.themeMode;
-    } else {
-      themeMode.value = ThemeMode.system;
-    }
+    themeMode.value = ThemeMode.system;
   }
 
   void setThemeMode(ThemeMode mode) {
@@ -29,9 +20,6 @@ class ThemeController extends GetxController {
   }
 
   Future<void> saveThemeSettings() async {
-    final currentSettings = await secureStore.loadSettings() ?? UserSettings.defaults();
-    final updatedSettings = currentSettings.copyWith(themeMode: themeMode.value);
-    await secureStore.saveSettings(updatedSettings);
     Get.changeThemeMode(themeMode.value);
   }
 

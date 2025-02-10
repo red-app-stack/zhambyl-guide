@@ -1,36 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../views/main/transfers_screen.dart';
-
-import '/views/main/home_screen.dart';
-import '../views/main/main_screen.dart';
+import 'package:zhambyl_guide/views/main/favourite.dart';
+import 'package:zhambyl_guide/views/main/feedback.dart';
+import 'package:zhambyl_guide/views/main/home.dart';
+import 'package:zhambyl_guide/views/main/main.dart';
+import 'package:zhambyl_guide/views/main/menu.dart';
 
 class Routes {
-  static const testing = '/testing';
-
   static const main = '/main';
-  static const phoneLogin = '/phoneLogin';
-  static const emailLogin = '/emailLogin';
-  static const register = '/register';
   static const home = '/home';
-  static const codeEntering = '/codeEntering';
-  static const passwordEntering = '/passwordEntering';
-  static const transfers = '/transfers';
-  static const paymentHistory = '/paymentHistory';
-  static const transferHistory = '/transferHistory';
-  static const transferDetails = '/transferDetails';
-
-  static const createAccount = '/createAccount';
-  static const phoneTransfer = '/phoneTransfer';
-  static const selfTransfer = '/selfTransfer';
-  static const cardTransfer = '/cardTransfer';
-
-  static const convertation = '/convertation';
-
-  static const qrTransfer = '/qrTransfer';
-
-  static const securitySettings = '/securitySettings';
-  static const userChat = '/userChat';
+  static const favourite = '/favourite';
+  static const feedback = '/feedback';
+  static const menu = '/menu';
+  // static const profile = '/profile';
 }
 
 class AppRoutes {
@@ -48,8 +30,20 @@ class AppRoutes {
       transitionDuration: Duration(milliseconds: 300),
     ),
     GetPage(
-      name: Routes.transfers,
-      page: () => TransfersScreen(),
+      name: Routes.favourite,
+      page: () => FavouriteScreen(),
+      customTransition: ZoomFadeTransition(),
+      transitionDuration: Duration(milliseconds: 400),
+    ),
+    GetPage(
+      name: Routes.feedback,
+      page: () => FeedbackScreen(),
+      customTransition: ZoomFadeTransition(),
+      transitionDuration: Duration(milliseconds: 400),
+    ),
+    GetPage(
+      name: Routes.menu,
+      page: () => MenuScreen(),
       customTransition: ZoomFadeTransition(),
       transitionDuration: Duration(milliseconds: 400),
     ),
