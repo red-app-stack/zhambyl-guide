@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/red-app-stack/zhambyl-guide"><img src="assets/images/logo.png" alt="Логотип Zhambyl Guide" width="200px"/></a>
+  <a href="https://github.com/red-app-stack/zhambyl-guide"><img src="assets/images/logo2.png" alt="Логотип Zhambyl Guide" width="200px"/></a>
 </p>
 
 <h2 align="center"><b>Zhambyl Guide – цифровой путеводитель</b></h2>
