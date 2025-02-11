@@ -127,6 +127,11 @@ class MainScreenState extends State<MainScreen> {
     final theme = Theme.of(context);
 
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: theme.colorScheme.surface,
+        elevation: 1,
+        toolbarHeight: 0,
+      ),
       body: SafeArea(
         child: Column(
           children: [

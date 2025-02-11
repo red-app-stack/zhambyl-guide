@@ -73,7 +73,7 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
                   child: SvgPicture.asset(
                     'assets/icons/ic_zoom.svg',
                     colorFilter: ColorFilter.mode(
-                      theme.colorScheme.secondary,
+                      theme.colorScheme.primary,
                       BlendMode.srcIn,
                     ),
                   ),

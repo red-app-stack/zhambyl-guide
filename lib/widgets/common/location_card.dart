@@ -26,8 +26,16 @@ class LocationCard extends StatelessWidget {
             children: [
               Positioned.fill(
                 child: Image.asset(
-                  location["images"][0], // Fixed: Accessing first image from list
+                  "${location["imagePaths"][0]}1.png", // Using first image from folder
                   fit: BoxFit.cover,
+                  errorBuilder: (context, error, stackTrace) => Image.asset(
+                    "${location["imagePaths"][0]}1.jpg",
+                    fit: BoxFit.cover,
+                    errorBuilder: (context, error, stackTrace) => Image.asset(
+                      "${location["imagePaths"][0]}1.jpeg",
+                      fit: BoxFit.cover,
+                    ),
+                  ),
                 ),
               ),
               Positioned.fill(

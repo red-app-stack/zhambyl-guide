@@ -110,14 +110,14 @@ class PanoramaExplorerState extends State<PanoramaExplorer> {
                 FloatingActionButton(
                   heroTag: "zoomInBtn",
                   onPressed: _zoomIn,
-                  tooltip: 'Zoom In',
+                  tooltip: 'Увеличить',
                   child: const Icon(Icons.zoom_in),
                 ),
                 const SizedBox(height: 10),
                 FloatingActionButton(
                   heroTag: "zoomOutBtn",
                   onPressed: _zoomOut,
-                  tooltip: 'Zoom Out',
+                  tooltip: 'Уменьшить',
                   child: const Icon(Icons.zoom_out),
                 ),
               ],
