@@ -41,12 +41,12 @@ class MainScreenState extends State<MainScreen> {
     'assets/icons/nav_menu_on.svg',
   ];
 
-  final List<String> _labels = [
-    'Главная',
-    'Нравится',
-    'Отзывы',
-    'Меню',
-  ];
+  // final List<String> _labels = [
+  //   'Главная',
+  //   'Нравится',
+  //   'Отзывы',
+  //   'Меню',
+  // ];
 
   @override
   void initState() {

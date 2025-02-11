@@ -10,8 +10,8 @@ class PanoramaExplorer extends StatefulWidget {
 
 class PanoramaExplorerState extends State<PanoramaExplorer> {
   final GlobalKey<PanoramaState> _panoramaKey = GlobalKey();
-  double _latitude = 0;
-  double _longitude = 0;
+  // double _latitude = 0;
+  // double _longitude = 0;
   double _zoom = 1.0;
   int _currentPanoIndex = 0;
 
@@ -95,8 +95,8 @@ class PanoramaExplorerState extends State<PanoramaExplorer> {
             animSpeed: 0.1,
             onViewChanged: (lon, lat, tilt) {
               setState(() {
-                _longitude = lon;
-                _latitude = lat;
+                // _longitude = lon;
+                // _latitude = lat;
               });
             },
             hotspots: _buildHotspots(theme),
