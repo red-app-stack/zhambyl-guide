@@ -39,8 +39,8 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
                 color: Colors.transparent,
                 child: InkWell(
                   borderRadius: BorderRadius.circular(30),
-                  splashColor: theme.colorScheme.primary.withOpacity(0.08),
-                  highlightColor: theme.colorScheme.primary.withOpacity(0.04),
+                  splashColor: theme.colorScheme.primary.withValues(alpha:0.08),
+                  highlightColor: theme.colorScheme.primary.withValues(alpha:0.04),
                   onTap: onProfileTap,
                   child: Padding(
                     padding: const EdgeInsets.all(6.0),
@@ -84,8 +84,8 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
                 color: Colors.transparent,
                 child: InkWell(
                   borderRadius: BorderRadius.circular(30),
-                  splashColor: theme.colorScheme.primary.withOpacity(0.08),
-                  highlightColor: theme.colorScheme.primary.withOpacity(0.04),
+                  splashColor: theme.colorScheme.primary.withValues(alpha:0.08),
+                  highlightColor: theme.colorScheme.primary.withValues(alpha:0.04),
                   onTap: onSearchTap,
                   child: Padding(
                     padding: const EdgeInsets.all(12.0),

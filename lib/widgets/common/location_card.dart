@@ -17,8 +17,8 @@ class LocationCard extends StatelessWidget {
       child: InkWell(
         borderRadius: BorderRadius.circular(16),
         onTap: onTap,
-        splashColor: theme.colorScheme.primary.withOpacity(0.2),
-        highlightColor: theme.colorScheme.primary.withOpacity(0.1),
+        splashColor: theme.colorScheme.primary.withValues(alpha:0.2),
+        highlightColor: theme.colorScheme.primary.withValues(alpha:0.1),
         child: Card(
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
           clipBehavior: Clip.hardEdge,
@@ -45,7 +45,7 @@ class LocationCard extends StatelessWidget {
                       begin: Alignment.bottomCenter,
                       end: const Alignment(0.0, -0.05),
                       colors: [
-                        theme.colorScheme.surface.withOpacity(0.7),
+                        theme.colorScheme.surface.withValues(alpha:0.7),
                         Colors.transparent,
                       ],
                     ),
@@ -77,7 +77,7 @@ class LocationCard extends StatelessWidget {
                           Text(
                             location["subtitle"],
                             style: TextStyle(
-                              color: theme.colorScheme.onSurface.withOpacity(0.8),
+                              color: theme.colorScheme.onSurface.withValues(alpha:0.8),
                               fontSize: 14,
                             ),
                             maxLines: 2,

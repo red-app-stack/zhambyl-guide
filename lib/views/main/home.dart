@@ -71,7 +71,7 @@ class HomeScreen extends StatelessWidget {
                         onTap: () {
                           print("$e tapped");
                         },
-                        splashColor: theme.colorScheme.primary.withOpacity(0.2),
+                        splashColor: theme.colorScheme.primary.withValues(alpha:0.2),
                         child: Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
                           child: Chip(

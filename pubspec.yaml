@@ -108,7 +108,6 @@ flutter:
 
   # Загружаем файлы
   assets:
-    - .env
     - assets/images/
     - assets/icons/
     - assets/photos/
